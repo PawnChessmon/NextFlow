@@ -1,0 +1,1 @@
+2025-09-19 18:05:44	-	cheesy_meucci	-	b971ba18d0f01dcc93a0597f8115cd55aeaa62a0	7426d445-a27d-4624-b588-42848bf51f86	nextflow run nf-core/rnaseq --input 'https://api.cloud.seqera.io/workspaces/40230138858677/datasets/7PeQNkLEX49AXKzioUNzbD/v/1/n/dataset.csv' --outdir results/ --genome GRCh38 --stranded reverse --aligner star_salmon --save_reference --deseq2_vst -profile docker

@@ -1,0 +1,446 @@
+Sep-19 18:05:36.755 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core/rnaseq --input 'https://api.cloud.seqera.io/workspaces/40230138858677/datasets/7PeQNkLEX49AXKzioUNzbD/v/1/n/dataset.csv' --outdir results/ --genome GRCh38 --stranded reverse --aligner star_salmon --save_reference --deseq2_vst -profile docker
+Sep-19 18:05:36.797 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.7
+Sep-19 18:05:36.824 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/ritupam/.nextflow/plugins; core-plugins: nf-amazon@2.15.0-patch1,nf-azure@1.16.0-patch1,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4-patch1,nf-wave@1.12.1
+Sep-19 18:05:36.841 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-19 18:05:36.841 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-19 18:05:36.843 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-19 18:05:36.850 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-19 18:05:36.856 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /Users/ritupam/.nextflow/scm
+Sep-19 18:05:37.381 [main] DEBUG nextflow.scm.AssetManager - Git config: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/rnaseq.git
+Sep-19 18:05:37.398 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Sep-19 18:05:37.404 [main] DEBUG nextflow.scm.AssetManager - Git config: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/rnaseq.git
+Sep-19 18:05:41.501 [main] INFO  nextflow.scm.AssetManager - NOTE: Your local project version looks outdated - a different revision is available in the remote repository [9738a2df42]
+Sep-19 18:05:41.507 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/nextflow.config
+Sep-19 18:05:41.508 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/nextflow.config
+Sep-19 18:05:41.513 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/ritupam/.nextflow/secrets/store.json
+Sep-19 18:05:41.514 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@3f6cce7f] - activable => nextflow.secret.LocalSecretsProvider@3f6cce7f
+Sep-19 18:05:41.521 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Sep-19 18:05:44.580 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [bih, cfc_dev, uzl_omics, ifb_core, embl_hd, denbi_qbic, alice, mjolnir_globe, uppmax, giga, incliva, ilifu, ki_luria, uge, icr_alma, rosalind_uge, lugh, mccleary, unibe_ibu, vai, czbiohub_aws, jax, roslin, tes, scw, unc_longleaf, tigem, tubingen_apg, apollo, ipop_up, vsc_calcua, pdc_kth, ceci_nic5, ccga_cau, humantechnopole, stjude, daisybio, eddie, medair, biowulf, apptainer, bi, bigpurple, test_full_gcp, adcra, cedars, pawsey_setonix, vsc_kul_uhasselt, pawsey_nimbus, ucl_myriad, utd_ganymede, charliecloud, fred_hutch, seattlechildrens, icr_davros, ceres, arm, munin, rosalind, hasta, cfc, test_full_aws, uzh, shu_bmrc, ebi_codon_slurm, ebc, ccga_dx, crick, ku_sund_danhead, marvin, shifter, biohpc_gen, mana, mamba, york_viking, unc_lccc, wehi, awsbatch, wustl_htcf, arcc, ceci_dragon2, imperial, maestro, software_license, cannon, genotoul, nci_gadi, abims, eva_grace, janelia, nu_genomics, googlebatch, oist, sahmri, kaust, alliance_canada, mpcdf, leicester, vsc_ugent, create, sage, cambridge, jex, podman, ebi_codon, cheaha, xanadu, nyu_hpc, test, marjorie, computerome, ucd_sonic, gpu, seg_globe, mssm, sanger, dkfz, bluebear, pasteur, einstein, ethz_euler, m3c, test_full, imb, ucl_cscluster, tuos_stanage, azurebatch, hki, seadragon, crukmi, csiro_petrichor, qmul_apocrita, wave, docker, test_full_azure, engaging, gis, hypatia, psmn, eva, unity, cropdiversityhpc, nygc, fgcz, conda, crg, singularity, mpcdf_viper, pe2, dirac, self_hosted_runner, tufts, uw_hyak_pedslabs, binac2, utd_sysbio, debug, genouest, cbe, unsw_katana, utd_juno, gitpod, phoenix, seawulf, uod_hpc, fub_curta, lovelace, uct_hpc, aws_tower, binac, fsu_draco]
+Sep-19 18:05:44.621 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Sep-19 18:05:44.622 [main] DEBUG nextflow.cli.CmdRun - Launching `https://github.com/nf-core/rnaseq` [cheesy_meucci] DSL2 - revision: b971ba18d0 [master]
+Sep-19 18:05:44.623 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-schema@2.4.2]
+Sep-19 18:05:44.623 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-19 18:05:44.623 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-schema@2.4.2]
+Sep-19 18:05:44.624 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-schema version: 2.4.2
+Sep-19 18:05:44.634 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-schema@2.4.2' resolved
+Sep-19 18:05:44.634 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-schema@2.4.2'
+Sep-19 18:05:44.638 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-schema@2.4.2
+Sep-19 18:05:44.675 [main] DEBUG nextflow.Session - Session UUID: 7426d445-a27d-4624-b588-42848bf51f86
+Sep-19 18:05:44.675 [main] DEBUG nextflow.Session - Run name: cheesy_meucci
+Sep-19 18:05:44.675 [main] DEBUG nextflow.Session - Executor pool size: 10
+Sep-19 18:05:44.680 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-19 18:05:44.683 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-19 18:05:44.700 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.7 build 5955
+  Created: 08-09-2025 13:29 UTC (18:59 IDT)
+  System: Mac OS X 26.0
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 17.0.10+7
+  Encoding: UTF-8 (UTF-8)
+  Process: 17401@Ritupams-MacBook-Pro.local [127.0.0.1]
+  CPUs: 10 - Mem: 16 GB (69.8 MB) - Swap: 0 (0)
+Sep-19 18:05:44.707 [main] DEBUG nextflow.Session - Work-dir: /Users/ritupam/Desktop/NextFlow/work [Mac OS X]
+Sep-19 18:05:44.727 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-19 18:05:44.733 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-19 18:05:44.743 [main] DEBUG nextflow.Session - Observer factory: ValidationObserverFactory
+Sep-19 18:05:44.746 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sep-19 18:05:44.771 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-19 18:05:44.779 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 11; maxThreads: 1000
+Sep-19 18:05:44.815 [main] DEBUG nextflow.Session - Session start
+Sep-19 18:05:44.817 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /Users/ritupam/Desktop/NextFlow/results/pipeline_info/execution_trace_2025-09-19_18-05-41.txt
+Sep-19 18:05:44.822 [main] DEBUG n.validation.config.ValidationConfig - Set `validation.monochromeLogs` to false
+Sep-19 18:05:44.823 [main] DEBUG n.validation.config.ValidationConfig - Added the following parameters to the ignored parameters: [genomes]
+Sep-19 18:05:44.824 [main] DEBUG n.validation.config.HelpConfig - Set `validation.help.enabled` to true
+Sep-19 18:05:44.825 [main] DEBUG n.validation.config.HelpConfig - Set `validation.help.showHiddenParameter` to show_hidden
+Sep-19 18:05:44.825 [main] DEBUG n.validation.config.HelpConfig - Set `validation.help.showHidden` to false (Due to --show_hidden)
+Sep-19 18:05:44.825 [main] DEBUG n.validation.config.HelpConfig - Set `validation.help.fullParameter` to help_full
+Sep-19 18:05:44.831 [main] DEBUG n.validation.config.HelpConfig - Set `validation.help.beforeText` to 
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/rnaseq 3.20.0
+------------------------------------------------------
+
+Sep-19 18:05:44.831 [main] DEBUG n.validation.config.HelpConfig - Set `validation.help.afterText` to 
+* The pipeline
+    https://doi.org/10.5281/zenodo.1400710
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/rnaseq/blob/master/CITATIONS.md
+
+Sep-19 18:05:44.832 [main] DEBUG n.validation.config.HelpConfig - Set `validation.help.command` to nextflow run nf-core/rnaseq -profile <docker/singularity/.../institute> --input samplesheet.csv --outdir <OUTDIR>
+Sep-19 18:05:44.833 [main] DEBUG n.validation.config.SummaryConfig - Set `validation.summary.beforeText` to 
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/rnaseq 3.20.0
+------------------------------------------------------
+
+Sep-19 18:05:44.834 [main] DEBUG n.validation.config.SummaryConfig - Set `validation.summary.afterText` to 
+* The pipeline
+    https://doi.org/10.5281/zenodo.1400710
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/rnaseq/blob/master/CITATIONS.md
+
+Sep-19 18:05:44.958 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-19 18:05:47.312 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-schema
+Sep-19 18:05:47.315 [main] DEBUG n.validation.config.ValidationConfig - Set `validation.monochromeLogs` to false
+Sep-19 18:05:47.315 [main] DEBUG n.validation.config.ValidationConfig - Added the following parameters to the ignored parameters: [genomes]
+Sep-19 18:05:47.315 [main] DEBUG n.validation.config.HelpConfig - Set `validation.help.enabled` to true
+Sep-19 18:05:47.315 [main] DEBUG n.validation.config.HelpConfig - Set `validation.help.showHiddenParameter` to show_hidden
+Sep-19 18:05:47.315 [main] DEBUG n.validation.config.HelpConfig - Set `validation.help.showHidden` to false (Due to --show_hidden)
+Sep-19 18:05:47.316 [main] DEBUG n.validation.config.HelpConfig - Set `validation.help.fullParameter` to help_full
+Sep-19 18:05:47.316 [main] DEBUG n.validation.config.HelpConfig - Set `validation.help.beforeText` to 
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/rnaseq 3.20.0
+------------------------------------------------------
+
+Sep-19 18:05:47.316 [main] DEBUG n.validation.config.HelpConfig - Set `validation.help.afterText` to 
+* The pipeline
+    https://doi.org/10.5281/zenodo.1400710
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/rnaseq/blob/master/CITATIONS.md
+
+Sep-19 18:05:47.316 [main] DEBUG n.validation.config.HelpConfig - Set `validation.help.command` to nextflow run nf-core/rnaseq -profile <docker/singularity/.../institute> --input samplesheet.csv --outdir <OUTDIR>
+Sep-19 18:05:47.316 [main] DEBUG n.validation.config.SummaryConfig - Set `validation.summary.beforeText` to 
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/rnaseq 3.20.0
+------------------------------------------------------
+
+Sep-19 18:05:47.317 [main] DEBUG n.validation.config.SummaryConfig - Set `validation.summary.afterText` to 
+* The pipeline
+    https://doi.org/10.5281/zenodo.1400710
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/rnaseq/blob/master/CITATIONS.md
+
+Sep-19 18:05:47.317 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-schema
+Sep-19 18:05:47.318 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Sep-19 18:05:49.231 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Sep-19 18:05:49.232 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Sep-19 18:05:51.151 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-schema
+Sep-19 18:05:51.151 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-schema
+Sep-19 18:05:51.152 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Sep-19 18:05:52.079 [main] INFO  nextflow.Nextflow - 
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/rnaseq 3.20.0
+------------------------------------------------------
+[1mInput/output options[0m
+  [0;34minput              : [0;32mhttps://api.cloud.seqera.io/workspaces/40230138858677/datasets/7PeQNkLEX49AXKzioUNzbD/v/1/n/dataset.csv[0m
+  [0;34moutdir             : [0;32mresults/[0m
+
+[1mReference genome options[0m
+  [0;34mgenome             : [0;32mGRCh38[0m
+  [0;34mfasta              : [0;32ms3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta/genome.fa[0m
+  [0;34mgtf                : [0;32ms3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes.gtf[0m
+  [0;34mgene_bed           : [0;32ms3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes.bed[0m
+  [0;34mstar_index         : [0;32ms3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Sequence/STARIndex/[0m
+
+[1mOptional outputs[0m
+  [0;34msave_reference     : [0;32mtrue[0m
+
+[1mGeneric options[0m
+  [0;34mtrace_report_suffix: [0;32m2025-09-19_18-05-41[0m
+
+[1mCore Nextflow options[0m
+  [0;34mrevision           : [0;32mmaster[0m
+  [0;34mrunName            : [0;32mcheesy_meucci[0m
+  [0;34mcontainerEngine    : [0;32mdocker[0m
+  [0;34mlaunchDir          : [0;32m/Users/ritupam/Desktop/NextFlow[0m
+  [0;34mworkDir            : [0;32m/Users/ritupam/Desktop/NextFlow/work[0m
+  [0;34mprojectDir         : [0;32m/Users/ritupam/.nextflow/assets/nf-core/rnaseq[0m
+  [0;34muserName           : [0;32mritupam[0m
+  [0;34mprofile            : [0;32mdocker[0m
+  [0;34mconfigFiles        : [0;32m/Users/ritupam/.nextflow/assets/nf-core/rnaseq/nextflow.config[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-
+* The pipeline
+    https://doi.org/10.5281/zenodo.1400710
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/rnaseq/blob/master/CITATIONS.md
+
+Sep-19 18:05:52.083 [main] DEBUG n.v.parameters.ParameterValidator - Starting parameters validation
+Sep-19 18:05:53.702 [main] DEBUG n.v.v.evaluators.SchemaEvaluator - Could not validate the file /workspaces/40230138858677/datasets/7PeQNkLEX49AXKzioUNzbD/v/1/n/dataset.csv
+Sep-19 18:05:54.407 [main] DEBUG n.v.v.e.FormatFilePathEvaluator - S3 paths are not supported by 'FormatFilePathEvaluator': 's3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes.bed'
+Sep-19 18:05:54.408 [main] DEBUG n.v.v.evaluators.ExistsEvaluator - S3 paths are not supported by 'ExistsEvaluator': 's3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes.bed'
+Sep-19 18:05:54.408 [main] DEBUG n.v.v.e.FormatFilePathEvaluator - S3 paths are not supported by 'FormatFilePathEvaluator': 's3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta/genome.fa'
+Sep-19 18:05:54.408 [main] DEBUG n.v.v.evaluators.ExistsEvaluator - S3 paths are not supported by 'ExistsEvaluator': 's3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta/genome.fa'
+Sep-19 18:05:54.409 [main] DEBUG n.v.v.evaluators.FormatPathEvaluator - S3 paths are not supported by 'FormatPathEvaluator': 's3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Sequence/STARIndex/'
+Sep-19 18:05:54.409 [main] DEBUG n.v.v.evaluators.ExistsEvaluator - S3 paths are not supported by 'ExistsEvaluator': 's3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Sequence/STARIndex/'
+Sep-19 18:05:54.409 [main] DEBUG n.v.v.e.FormatFilePathEvaluator - S3 paths are not supported by 'FormatFilePathEvaluator': 's3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes.gtf'
+Sep-19 18:05:54.409 [main] DEBUG n.v.v.evaluators.ExistsEvaluator - S3 paths are not supported by 'ExistsEvaluator': 's3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes.gtf'
+Sep-19 18:05:54.410 [main] DEBUG n.v.v.e.FormatDirectoryPathEvaluator - Cloud blob storage paths are not supported by 'FormatDirectoryPathEvaluator': 's3://ngi-igenomes/igenomes/'
+Sep-19 18:05:55.474 [main] WARN  n.v.parameters.ParameterValidator - The following invalid input values have been detected:
+
+* --custom_config_base: https://raw.githubusercontent.com/nf-core/configs/master
+* --kallisto_quant_fraglen_sd: 200
+* --featurecounts_feature_type: exon
+* --gene_bed: s3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes.bed
+* --save_reference: true
+* --ribo_database_manifest: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/workflows/rnaseq/assets/rrna-db-defaults.txt
+* --extra_fqlint_args: --disable-validator P001
+* --aligner: star_salmon
+* --custom_config_version: master
+* --fasta: s3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta/genome.fa
+* --featurecounts_group_type: gene_biotype
+* --hisat2_build_memory: 200.GB
+* --skip_preseq: true
+* --star_index: s3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Sequence/STARIndex/
+* --umi_dedup_tool: umitools
+* --gtf: s3://ngi-igenomes/igenomes//Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes.gtf
+* --gtf_extra_attributes: gene_name
+* --max_multiqc_email_size: 25.MB
+* --bracken_precision: S
+* --min_trimmed_reads: 10000
+* --pseudo_aligner_kmer_size: 31
+* --deseq2_vst: true
+* --umitools_extract_method: string
+* --validate_params: true
+* --min_mapped_reads: 5
+* --rseqc_modules: bam_stat,inner_distance,infer_experiment,junction_annotation,junction_saturation,read_distribution,read_duplication
+* --gtf_group_features: gene_id
+* --stranded: reverse
+* --kallisto_quant_fraglen: 200
+* --trimmer: trimgalore
+* --outdir: results/
+* --skip_bbsplit: true
+* --publish_dir_mode: copy
+* --pipelines_testdata_base_path: https://raw.githubusercontent.com/nf-core/test-datasets/7f1614baeb0ddf66e60be78c3d9fa55440465ac8/
+* --input: https://api.cloud.seqera.io/workspaces/40230138858677/datasets/7PeQNkLEX49AXKzioUNzbD/v/1/n/dataset.csv
+* --genome: GRCh38
+* --stranded_threshold: 0.8
+* --igenomes_base: s3://ngi-igenomes/igenomes/
+* --trace_report_suffix: 2025-09-19_18-05-41
+* --unstranded_threshold: 0.1
+* --umitools_grouping_method: directional
+
+
+Sep-19 18:05:55.476 [main] ERROR n.v.parameters.ParameterValidator - Validation of pipeline parameters failed!
+Sep-19 18:05:55.479 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_d3865926248d0c08: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/samtools/stats/main.nf
+  Script_1f8b206dadc812e1: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/hisat2/build/main.nf
+  Script_4fb9e5798185138e: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/nf-core/fastq_align_hisat2/main.nf
+  Script_cdbce3e23a8f89e8: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/nf-core/bam_stats_samtools/main.nf
+  Script_9e61b79b569950a4: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/fastqc/main.nf
+  Script_ba93fd870f3d5e8f: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/stringtie/stringtie/main.nf
+  Script_a780234b47eb3af3: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/gunzip/main.nf
+  Script_31255d0567520817: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/nf-core/bam_markduplicates_picard/main.nf
+  Script_a20b3fd16306742a: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/kallisto/index/main.nf
+  Script_9131a36f1f3530e1: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/local/deseq2_qc/main.nf
+  Script_61f4f72de66b39fa: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/nf-core/bam_dedup_stats_samtools_umicollapse/main.nf
+  Script_ea292e4ecdc4213b: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/workflows/rnaseq/main.nf
+  Script_7bbd1ec48b03ff67: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/nf-core/bedgraph_bedclip_bedgraphtobigwig/main.nf
+  Script_f65bfa7087aaf1bf: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/rseqc/junctionannotation/main.nf
+  Script_cd4906dd24febbaa: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/preseq/lcextrap/main.nf
+  Script_9a18b35b89d0b8b3: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/local/star_align_igenomes/main.nf
+  Script_77468180ec8f844f: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/nf-core/quantify_pseudo_alignment/main.nf
+  Script_ee7625b144fae20e: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/local/utils_nfcore_rnaseq_pipeline/main.nf
+  Script_96b697d8cd2cb946: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/rsem/calculateexpression/main.nf
+  Script_8b0b71d375e85985: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/sentieon/staralign/main.nf
+  Script_45d45be70069d617: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/multiqc/main.nf
+  Script_473b73bcd0be0b97: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/local/quantify_rsem/main.nf
+  Script_cc2a9c8ba5b8cc15: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/rseqc/tin/main.nf
+  Script_6012db1a2adb3e63: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/summarizedexperiment/summarizedexperiment/main.nf
+  Script_de1c7c124fa4c7b4: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/samtools/sort/main.nf
+  Script_2580806872fee805: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/fq/lint/main.nf
+  Script_18dda2a77f3fcc1a: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/kallisto/quant/main.nf
+  Script_e10a0e7467f0b3e9: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/picard/markduplicates/main.nf
+  Script_2882453b74be5692: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/local/multiqc_custom_biotype/main.nf
+  Script_b043057988626cf5: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/local/gtf2bed/main.nf
+  Script_e00b31b2b03a0d90: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/local/prepare_genome/main.nf
+  Script_5752768576b10575: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/ucsc/bedgraphtobigwig/main.nf
+  Script_7dce7feb3287bd8d: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/hisat2/extractsplicesites/main.nf
+  Script_693bbc6163e7673d: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/rsem/preparereference/main.nf
+  Script_4779b6382e5427ab: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/cat/fastq/main.nf
+  Script_8ea3feb9c15d5fda: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/fq/subsample/main.nf
+  Script_54e0c3dce4d8c049: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/dupradar/main.nf
+  Script_fe6f9a2d2d32c34f: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/rseqc/innerdistance/main.nf
+  Script_e927852b807f691d: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/rseqc/inferexperiment/main.nf
+  Script_18089a64b4672be8: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/nf-core/bam_rseqc/main.nf
+  Script_5c5e6babfb5fb619: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/trimgalore/main.nf
+  Script_856d5cb73ff5a3d1: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/main.nf
+  Script_3ff1656b1d66c1f2: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/samtools/index/main.nf
+  Script_7712cb67a31b4937: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/star/align/main.nf
+  Script_2a3123de5fac596c: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/untar/main.nf
+  Script_8703d5c7d48af3ab: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/local/star_genomegenerate_igenomes/main.nf
+  Script_59101990e865c327: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/umitools/dedup/main.nf
+  Script_cfbe3db3f8d86852: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/subread/featurecounts/main.nf
+  Script_b4163cee6a6b2681: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/umitools/extract/main.nf
+  Script_f76f3032c6bfcc73: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/bbmap/bbsplit/main.nf
+  Script_58ab0c288a51eacd: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/local/rsem_merge_counts/main.nf
+  Script_2cd3960e599fb6c8: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/samtools/idxstats/main.nf
+  Script_1adca4cb4e6fb5ea: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/nf-core/bam_dedup_stats_samtools_umitools/main.nf
+  Script_7f6dc3719b8e322e: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/local/align_star/main.nf
+  Script_78bf8b6ebf2410dd: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/custom/catadditionalfasta/main.nf
+  Script_cf1e17a1e4a14232: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/rseqc/bamstat/main.nf
+  Script_82ee5691354bfa51: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/bracken/bracken/main.nf
+  Script_89479fc8fff50057: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/local/preprocess_transcripts_fasta_gencode/main.nf
+  Script_b666edf0129ec7fc: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/gffread/main.nf
+  Script_e4a9ed56bee18acd: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_fastp/main.nf
+  Script_22e881f90cabfe1d: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/custom/getchromsizes/main.nf
+  Script_f213122428991d36: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/star/genomegenerate/main.nf
+  Script_f84ac7d7414849ca: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/qualimap/rnaseq/main.nf
+  Script_23e9bb1f954772b0: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/ucsc/bedclip/main.nf
+  Script_61511ba564b8de29: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf
+  Script_215a636da7ab24a2: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/nf-core/utils_nfschema_plugin/main.nf
+  Script_e450b5a5a70fe0a3: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/umicollapse/main.nf
+  Script_5c4e8d4051efa81e: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/nf-core/utils_nfcore_pipeline/main.nf
+  Script_a1cae008e2b3ecdb: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/salmon/index/main.nf
+  Script_f049e98f545bf4fd: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/nf-core/bam_dedup_umi/main.nf
+  Script_41bd0f9820609141: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/kraken2/kraken2/main.nf
+  Script_46c2c2ed6579530d: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/local/gtf_filter/main.nf
+  Script_04245b6e03ed8005: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/hisat2/align/main.nf
+  Script_dbe8fbfa975cebf1: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/rseqc/junctionsaturation/main.nf
+  Script_498db87a6d4f03d8: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/samtools/flagstat/main.nf
+  Script_1fec6244d3b07512: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/salmon/quant/main.nf
+  Script_7acb62b9e60b283e: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/rseqc/readduplication/main.nf
+  Script_05e6181593614928: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/bedtools/genomecov/main.nf
+  Script_4f612cfd8c52e8cd: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/nf-core/utils_nextflow_pipeline/main.nf
+  Script_9577c782c888f1f8: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/nf-core/fastq_qc_trim_filter_setstrandedness/main.nf
+  Script_b355087dc9d365d0: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/fastp/main.nf
+  Script_d7c1df40d9183ce6: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/sortmerna/main.nf
+  Script_2e9732ba2ba99693: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/sentieon/rsemcalculateexpression/main.nf
+  Script_128cb4fde5e21aab: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/custom/tx2gene/main.nf
+  Script_2b72a5be5c8fe209: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/tximeta/tximport/main.nf
+  Script_e76b9210f32f34ec: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/umitools/prepareforrsem/main.nf
+  Script_1c096ce7a1935019: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/sentieon/rsempreparereference/main.nf
+  Script_f1f53abfc1403f76: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf
+  Script_bd8537eec78d4f82: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/modules/nf-core/rseqc/readdistribution/main.nf
+  Script_2ebe1d1a775a7432: /Users/ritupam/.nextflow/assets/nf-core/rnaseq/subworkflows/nf-core/bam_sort_stats_samtools/main.nf
+Sep-19 18:05:55.480 [main] DEBUG nextflow.Session - Session aborted -- Cause: [0;31mThe following invalid input values have been detected:
+
+* --input (https://api.cloud.seqera.io/workspaces/40230138858677/datasets/7PeQNkLEX49AXKzioUNzbD/v/1/n/dataset.csv): the file or directory 'https://api.cloud.seqera.io/workspaces/40230138858677/datasets/7PeQNkLEX49AXKzioUNzbD/v/1/n/dataset.csv' does not exist (The input must be a valid CSV file path with no spaces, ending in '.csv', and must exist.)
+[0m
+
+Sep-19 18:05:55.490 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.validation.exceptions.SchemaValidationException: [0;31mThe following invalid input values have been detected:
+
+* --input (https://api.cloud.seqera.io/workspaces/40230138858677/datasets/7PeQNkLEX49AXKzioUNzbD/v/1/n/dataset.csv): the file or directory 'https://api.cloud.seqera.io/workspaces/40230138858677/datasets/7PeQNkLEX49AXKzioUNzbD/v/1/n/dataset.csv' does not exist (The input must be a valid CSV file path with no spaces, ending in '.csv', and must exist.)
+[0m
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.validation.parameters.ParameterValidator.validateParametersMap(ParameterValidator.groovy:179)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.validation.ValidationExtension.validateParameters(ValidationExtension.groovy:106)
+	at nextflow.validation.ValidationExtension.validateParameters(ValidationExtension.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at nextflow.script.FunctionDef.invoke_a(FunctionDef.groovy:64)
+	at nextflow.script.ComponentDef.invoke_o(ComponentDef.groovy:40)
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:105)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:651)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:392)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:331)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_215a636da7ab24a2$_runScript_closure1$_closure2.doCall(Script_215a636da7ab24a2:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:205)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:189)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at nextflow.script.ComponentDef.invoke_o(ComponentDef.groovy:40)
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:105)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:651)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:392)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:331)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_ee7625b144fae20e$_runScript_closure12$_closure14.doCall(Script_ee7625b144fae20e:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:205)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:189)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at nextflow.script.ComponentDef.invoke_o(ComponentDef.groovy:40)
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:105)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:651)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:392)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:331)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_856d5cb73ff5a3d1$_runScript_closure2$_closure5.doCall(Script_856d5cb73ff5a3d1:145)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:205)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:189)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:182)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:193)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy:246)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:246)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:139)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:379)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)
