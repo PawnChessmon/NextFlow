@@ -1,0 +1,13 @@
+sample,fastq_1,fastq_2,strandedness
+A549_control_1,SRR32033552,,reverse
+A549_control_2,SRR32033551,,reverse
+A549_control_3,SRR32033550,,reverse
+A549_overexp_1,SRR32033549,,reverse
+A549_overexp_2,SRR32033548,,reverse
+A549_overexp_3,SRR32033547,,reverse
+H129_control_1,SRR32033546,,reverse
+H129_control_2,SRR32033545,,reverse
+H129_control_3,SRR32033544,,reverse
+H129_overexp_1,SRR32033543,,reverse
+H129_overexp_2,SRR32033542,,reverse
+H129_overexp_3,SRR32033541,,reverse
